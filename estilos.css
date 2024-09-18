@@ -5,6 +5,10 @@
     font-family: 'Acme';
 }   
 
+html{
+    scroll-behavior: smooth;
+}
+
 section{
     height: 100vh;
     display: flex;
@@ -12,6 +16,35 @@ section{
     justify-content: center;
     text-align: center;
     color: #fff;
+}
+nav{
+    background: #000;
+    position: fixed;
+    right: 50%;
+    transform: translateX(50%);
+    border: 4px solid #fff;
+    border-radius: 50px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+section h1{
+    font-size: 70px;
+}
+section p{
+    font-size: 28px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 #inicio{
